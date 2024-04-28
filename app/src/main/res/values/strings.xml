@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MathMania</string>
+    <string name="start_game">Start Game</string>
+
+    <string name="num_10">10</string>
+    <string name="num_20">20</string>
+    <string name="num_30">30</string>
+    <string name="num_40">40</string>
+    <string name="num_50">50</string>
+    <string name="num_60">60</string>
+    <string name="num_70">70</string>
+    <string name="num_80">80</string>
+    <string name="num_90">90</string>
+    <string name="num_100">100</string>
+
+    <string name="game">MathMania</string>
+    <string name="hello">Hello,</string>
+    <string name="knowledge">"MathMania" is an exhilarating math game designed to challenge and entertain players of all ages. Dive into a world of numbers, puzzles, and brain-teasing equations as you race against the clock to solve math problems and become the ultimate MathMania champion!</string>
+    <string name="display_num">100</string>
+    <string name="select_num">2</string>
+    <string name="timerTextView">Time Remaining: 10</string>
+    <string name="Score">Score</string>
+    <string name="Scorevalue">0</string>
+
+    <string name="submit_button">Submit</string>
+    <string name="restart_button">Restart</string>
+    <string name="bck_button">Back</string>
+
+    <string name="scorebtn">Score</string>
+    <string name="scorelist">Empty</string>
+    <string name="scorelistt">Score List</string>
+
+
+    <string name="total"></string>
+</resources>
