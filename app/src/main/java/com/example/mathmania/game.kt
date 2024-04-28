@@ -83,6 +83,7 @@ class game : AppCompatActivity() {
 
             } else {
 
+                //Dialog box
                 val alertDialogBuilder = AlertDialog.Builder(this)
                 alertDialogBuilder.setMessage("You Lost.Try again..")
                 alertDialogBuilder.setPositiveButton("Restart") { dialog, which ->
@@ -92,11 +93,11 @@ class game : AppCompatActivity() {
                 val alertDialog = alertDialogBuilder.create()
                 alertDialog.show()
 
-                // Retrieve existing "game_result" data
+                // get existing "game_result" data
                 val existingData = sharedPreferences.getString("game_result", "")
 
                 if (score != 0) {
-                    // Create new game result entry with current date and time
+                    // current date and time
                     val currentDateTime =
                         SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).format(Date())
                     val newGameResult = "$currentDateTime - Score $score"
@@ -107,7 +108,7 @@ class game : AppCompatActivity() {
                     } else {
                         // Split existing data into lines
                         val lines = existingData.split("\n")
-                        // If the number of lines exceeds 5, remove the last line (oldest data)
+                        // If the number of lines exceeds 5, remove the last line
                         val updatedLines = if (lines.size >= 5) {
                             lines.dropLast(1)
                         } else {
@@ -152,6 +153,7 @@ class game : AppCompatActivity() {
 
         }
 
+        //values
         val TotalValuNumbers = arrayOf(150, 20, 110, 130, 70, 60, 120, 40, 30, 10)
         val Selected_numbers = arrayOf(2, 4, 3)
         val Button_numbers = arrayOf(10, 20, 30, 40, 50, 60, 70, 80, 90, 100)
@@ -219,6 +221,7 @@ class game : AppCompatActivity() {
         for (button in buttons) {
             button.setOnClickListener {
 
+                //Reduce the button selection
                 if (selections > 0) {
                     val number = button.text.toString().toInt()
                     total += number
@@ -229,6 +232,7 @@ class game : AppCompatActivity() {
 
                     if (selections == 0) {
 
+                        // Disable all buttons
                         for (btn in buttons) {
                             btn.isEnabled = false
                         }
